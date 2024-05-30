@@ -1,4 +1,4 @@
-#SkyPro-CourseWork-HHParser
+# SkyPro-CourseWork-HHParser
 
 Курсовая работа по Python (ООП)
 
