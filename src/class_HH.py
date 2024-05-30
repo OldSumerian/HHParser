@@ -6,14 +6,13 @@ class HeadHunterAPI(Parser):
     """
     Класс для работы с API HeadHunter
     """
-
     def __init__(self):
         self.url = 'https://api.hh.ru/vacancies'
         self.headers = {'User-Agent': 'HH-User-Agent'}
         self.params = {'text': '', 'page': 0, 'per_page': 10}
         self.vacancies = []
 
-    def load_vacancies(self, keyword: str, salary_range, page):
+    def load_vacancies(self, keyword: str, salary_range: int, page: int):
         self.params['text'] = keyword
         if salary_range != 0:
             self.params['salary'] = salary_range
