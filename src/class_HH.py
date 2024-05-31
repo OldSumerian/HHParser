@@ -13,6 +13,13 @@ class HeadHunterAPI(Parser):
         self.vacancies = []
 
     def load_vacancies(self, keyword: str, salary_range: int, page: int):
+        """
+        Функция по получению сведений о вакансиях с сайта согласно параметрам запроса
+        :param keyword:
+        :param salary_range:
+        :param page:
+        :return:
+        """
         self.params['text'] = keyword
         if salary_range != 0:
             self.params['salary'] = salary_range
