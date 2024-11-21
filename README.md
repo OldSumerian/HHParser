@@ -1,6 +1,6 @@
-# SkyPro-CourseWork-HHParser
+# HHParser
 
-Курсовая работа по Python (ООП)
+
 
 Парсер вакансий с сайта HeadHunter
 
